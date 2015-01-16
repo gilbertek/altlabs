@@ -19,7 +19,7 @@ POST_FILE_EXTENSION   = '.md'
 POST_FILES_DIR        = 'posts'
 SECRET_KEY            = 'not-so-secret'
 FREEZER_BASE_URL      = 'http://localhost'
-FREEZER_IGNORED_FILES = ['.git', 'CNAME']
+FREEZER_IGNORED_FILES = ['.git', 'CNAME', 'bower_components', 'node_modules']
 
 
 app     = Flask(__name__)
@@ -32,4 +32,4 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run(port=8000, debug=True)
+    app.run(port=5000, debug=True)
